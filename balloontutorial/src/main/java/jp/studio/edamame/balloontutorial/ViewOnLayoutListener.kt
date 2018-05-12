@@ -1,6 +1,5 @@
 package jp.studio.edamame.balloontutorial
 
-import android.os.Build
 import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver
@@ -19,13 +18,9 @@ internal class ViewOnLayoutListener private constructor(val view: View) {
             callback.invoke()
         } else {
             onGlobalLayoutListener = ViewTreeObserver.OnGlobalLayoutListener {
-                Log.e("ViewOnLayoutListener", "OnGlobalLayoutListener")
+                Log.d("ViewOnLayoutListener", "OnGlobalLayoutListener")
 
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                    view.viewTreeObserver.removeOnGlobalLayoutListener(onGlobalLayoutListener)
-                } else {
-                    view.viewTreeObserver.removeGlobalOnLayoutListener(onGlobalLayoutListener)
-                }
+                view.viewTreeObserver.removeOnGlobalLayoutListener(onGlobalLayoutListener)
 
                 view.post {
                     Log.e("ViewOnLayoutListener", "view.post")
