@@ -26,8 +26,8 @@ class TutorialBuilder private constructor(activity: Activity, target: View) {
     private var holeType: HoleType = HoleType.CIRCLE
     private var radiusOfDp: Float = 100.0f
 
-    var balloonColor = Color.parseColor("#4285f4")
-    var textColor = Color.WHITE
+    private var balloonColor = Color.parseColor("#4285f4")
+    private var textColor = Color.WHITE
 
     private var durationForBaseAnimation = 100L
     private var durationForBalloonTextAnimation = 150L
