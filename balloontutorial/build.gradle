@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 27
@@ -22,7 +23,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
 
+publish {
+    userOrg = 'gupuru'
+    groupId = 'jp.studio.edamame.balloontutorial'
+    artifactId = 'balloontutorial'
+    publishVersion = '1.0.0'
+    desc = 'tutolial'
+    website = 'https://github.com/nabesuke0/BalloonTutorial'
 }
 
 dependencies {
@@ -33,7 +42,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
 }
+
 repositories {
     mavenCentral()
 }
