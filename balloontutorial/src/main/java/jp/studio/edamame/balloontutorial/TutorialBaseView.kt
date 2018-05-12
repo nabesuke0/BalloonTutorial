@@ -11,7 +11,7 @@ import android.view.View
 import android.widget.FrameLayout
 
 
-abstract class TutorialBaseView internal constructor(
+internal abstract class TutorialBaseView internal constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 

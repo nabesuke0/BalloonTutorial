@@ -5,7 +5,7 @@ import android.graphics.Canvas
 import android.util.AttributeSet
 import android.view.View
 
-class TutorialBaseCircleView @JvmOverloads constructor(
+internal class TutorialBaseCircleView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : TutorialBaseView(context, attrs, defStyleAttr) {
 

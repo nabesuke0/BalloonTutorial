@@ -8,7 +8,7 @@ import android.util.Log
 import android.view.View
 
 
-class TutorialDescriptionView private constructor(
+internal class TutorialDescriptionView private constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 

@@ -5,7 +5,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver
 
-class ViewOnLayoutListener private constructor(val view: View) {
+internal class ViewOnLayoutListener private constructor(val view: View) {
     private lateinit var onGlobalLayoutListener: ViewTreeObserver.OnGlobalLayoutListener
 
     companion object {

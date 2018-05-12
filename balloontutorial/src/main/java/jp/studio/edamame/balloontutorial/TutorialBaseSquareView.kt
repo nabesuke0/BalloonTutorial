@@ -6,7 +6,7 @@ import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
 
-class TutorialBaseSquareView @JvmOverloads constructor(
+internal class TutorialBaseSquareView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : TutorialBaseView(context, attrs, defStyleAttr) {
 
