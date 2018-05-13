@@ -1,5 +1,6 @@
 package jp.studio.edamame.balloontutorial
 
+import android.os.Build
 import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver
@@ -28,7 +29,11 @@ internal class ViewOnLayoutListener private constructor(val view: View) {
                 }
             }
 
-            view.viewTreeObserver.addOnGlobalLayoutListener(onGlobalLayoutListener)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                view.viewTreeObserver.removeOnGlobalLayoutListener(onGlobalLayoutListener)
+            } else {
+                view.viewTreeObserver.removeGlobalOnLayoutListener(onGlobalLayoutListener)
+            }
         }
     }
 }

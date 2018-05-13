@@ -6,7 +6,7 @@ android {
     compileSdkVersion 27
 
     defaultConfig {
-        minSdkVersion 20
+        minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -31,7 +31,7 @@ publish {
     userOrg = 'nabesuke'
     groupId = 'jp.studio.edamame'
     artifactId = 'balloontutorial'
-    publishVersion = '0.1.0'
+    publishVersion = '0.2.0'
     desc = 'tutolial'
     website = 'https://github.com/nabesuke0/BalloonTutorial'
     repoName = 'edamame'
