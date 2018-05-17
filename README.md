@@ -29,6 +29,8 @@ TutorialBuilder.init(this, target = binding.buttonTutorialCircle)
 ```
 
 ## property
+- hole type
+- radius(use circle type)
 - text color
 - balloon color
 - duration of animation
