@@ -4,7 +4,7 @@ Simple tutorial library.
 
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-![sample_image](https://user-images.githubusercontent.com/1941369/40153004-a9dc0b0e-59c2-11e8-8967-524855a7469f.png)
+![sample_tutorial](https://user-images.githubusercontent.com/1941369/40185507-b8807396-5a2d-11e8-8770-2478da5ddddc.gif)
 
 # Including in your project
 ```build.gradle
