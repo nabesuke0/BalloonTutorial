@@ -21,6 +21,7 @@ internal class ViewOnLayoutListener private constructor(val view: View) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                     view.viewTreeObserver.removeOnGlobalLayoutListener(onGlobalLayoutListener)
                 } else {
+                    @Suppress("DEPRECATION")
                     view.viewTreeObserver.removeGlobalOnLayoutListener(onGlobalLayoutListener)
                 }
                 view.post {
