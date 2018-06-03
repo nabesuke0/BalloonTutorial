@@ -46,6 +46,110 @@ TutorialBuilder.init(this, binding.buttonTutorialSquare)
         .buildAndLayout()
 ```
 
+### ビルダーを初期化
+
+```kotlin
+TutorialBuilder.init(activituy, target = targetView)
+```
+
+ `.init(activity, targetView)` で初期化します。
+
+### 対象ハイライトする形を指定する
+
+```kotlin
+.holeType(type: TutorialBuilder.HoleType)
+```
+
+ - 四角形
+
+```kotlin
+.holeType(TutorialBuilder.HoleType.SQUARE)
+```
+
+ - 円形
+
+```kotlin
+.holeType(TutorialBuilder.HoleType.CIRCLE)
+.radiusOfDp(50f) // 円形の場合は半径を指定する(dp)
+```
+        
+### 吹き出しを設定
+
+```kotlin
+.descriptionByString("説明が入ります") // 吹き出しの文字
+.textColor(@ColorInt color: Int) // 文字色
+.balloonColor(@ColorInt color: Int) // 吹き出しの色
+```
+
+### タップの動作を指定
+
+```kotlin
+.onClickedOutSide { } // ターゲットの外側をタップされたとき
+.onClickedTarget { } // ターゲットをタップされたとき
+```
+
+### アニメーションの時間を指定
+ - msecで指定
+
+```kotlin
+.durationForBaseAnimation(150) // 背景の表示
+.durationForHoleAnimation(300) // ハイライトの表示
+.durationForBalloonTextAnimation(200) // 吹き出し
+```
+
+
+### ビルダーを初期化
+
+```kotlin
+TutorialBuilder.init(activituy, target = targetView)
+```
+
+ `.init(activity, targetView)` で初期化します。
+
+### 対象ハイライトする形を指定する
+
+```kotlin
+.holeType(type: TutorialBuilder.HoleType)
+```
+
+		* 四角形
+
+```kotlin
+.holeType(TutorialBuilder.HoleType.SQUARE)
+```
+
+		* 円形
+
+```kotlin
+.holeType(TutorialBuilder.HoleType.CIRCLE)
+.radiusOfDp(50f) // 円形の場合は半径を指定する(dp)
+```
+        
+### 吹き出しを設定
+
+```kotlin
+.descriptionByString("説明が入ります") // 吹き出しの文字
+.textColor(@ColorInt color: Int) // 文字色
+.balloonColor(@ColorInt color: Int) // 吹き出しの色
+```
+
+### タップの動作を指定
+
+```kotlin
+.onClickedOutSide { } // ターゲットの外側をタップされたとき
+.onClickedTarget { } // ターゲットをタップされたとき
+```
+
+### アニメーションの時間を指定
+- msecで指定
+
+```kotlin
+.durationForBaseAnimation(150) // 背景の表示
+.durationForHoleAnimation(300) // ハイライトの表示
+.durationForBalloonTextAnimation(200) // 吹き出し
+```
+
+
 # ライセンス
 ```
 MIT License
