@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
                     .balloonColor(Color.BLACK)
                     .textColor(Color.WHITE)
                     .durationForBaseAnimation(150)
-                    .durationForBaseAnimation(300)
                     .buildAndLayout()
         }
     }
