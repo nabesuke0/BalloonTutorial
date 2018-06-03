@@ -9,7 +9,7 @@ Simple tutorial library.
 # Including in your project
 ```build.gradle
 dependencies {
-	implementation 'jp.studio.edamame:balloontutorial:0.2.1'
+	implementation 'jp.studio.edamame:balloontutorial:0.2.2'
 }
 ```
 
