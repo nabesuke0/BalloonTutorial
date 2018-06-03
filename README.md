@@ -46,6 +46,7 @@ TutorialBuilder.init(this, binding.buttonTutorialSquare)
         .buildAndLayout()
 ```
 
+# ライセンス
 ```
 MIT License
 
